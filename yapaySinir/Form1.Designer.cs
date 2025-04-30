@@ -53,23 +53,26 @@ namespace yapaySinir
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.ColumnHeadersVisible = false;
-            dataGridView1.Location = new System.Drawing.Point(12, 43);
+            dataGridView1.Location = new System.Drawing.Point(12, 30);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new System.Drawing.Size(123, 172);
+            dataGridView1.Size = new System.Drawing.Size(123, 171);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
             button1.AutoSize = true;
-            button1.Location = new System.Drawing.Point(12, 223);
+            button1.Location = new System.Drawing.Point(12, 210);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(119, 30);
             button1.TabIndex = 1;
@@ -85,7 +88,7 @@ namespace yapaySinir
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new System.Drawing.Point(167, 25);
+            groupBox1.Location = new System.Drawing.Point(167, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(303, 227);
             groupBox1.TabIndex = 2;
@@ -103,7 +106,7 @@ namespace yapaySinir
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             label6.Location = new System.Drawing.Point(6, 197);
             label6.Name = "label6";
             label6.Size = new System.Drawing.Size(88, 20);
@@ -145,11 +148,10 @@ namespace yapaySinir
             label1.Size = new System.Drawing.Size(87, 20);
             label1.TabIndex = 0;
             label1.Text = "A Output = ";
-            label1.Click += label1_Click;
             // 
             // button2
             // 
-            button2.Location = new System.Drawing.Point(376, 288);
+            button2.Location = new System.Drawing.Point(376, 275);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(94, 29);
             button2.TabIndex = 3;
@@ -159,7 +161,7 @@ namespace yapaySinir
             // 
             // button3
             // 
-            button3.Location = new System.Drawing.Point(176, 288);
+            button3.Location = new System.Drawing.Point(276, 275);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(94, 29);
             button3.TabIndex = 4;
@@ -170,7 +172,7 @@ namespace yapaySinir
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(167, 255);
+            label7.Location = new System.Drawing.Point(167, 242);
             label7.Name = "label7";
             label7.Size = new System.Drawing.Size(174, 20);
             label7.TabIndex = 7;
@@ -178,17 +180,16 @@ namespace yapaySinir
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new System.Drawing.Point(376, 253);
+            numericUpDown1.Location = new System.Drawing.Point(376, 240);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new System.Drawing.Size(94, 27);
             numericUpDown1.TabIndex = 8;
-            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // button4
             // 
-            button4.Location = new System.Drawing.Point(276, 288);
+            button4.Location = new System.Drawing.Point(12, 282);
             button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(94, 29);
+            button4.Size = new System.Drawing.Size(119, 29);
             button4.TabIndex = 9;
             button4.Text = "Reset";
             button4.UseVisualStyleBackColor = true;
@@ -197,7 +198,7 @@ namespace yapaySinir
             // button5
             // 
             button5.AutoSize = true;
-            button5.Location = new System.Drawing.Point(12, 259);
+            button5.Location = new System.Drawing.Point(12, 246);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(119, 30);
             button5.TabIndex = 10;
@@ -207,7 +208,7 @@ namespace yapaySinir
             // 
             // button6
             // 
-            button6.Location = new System.Drawing.Point(276, 323);
+            button6.Location = new System.Drawing.Point(276, 310);
             button6.Name = "button6";
             button6.Size = new System.Drawing.Size(94, 29);
             button6.TabIndex = 11;
@@ -217,7 +218,7 @@ namespace yapaySinir
             // 
             // button7
             // 
-            button7.Location = new System.Drawing.Point(376, 323);
+            button7.Location = new System.Drawing.Point(376, 310);
             button7.Name = "button7";
             button7.Size = new System.Drawing.Size(94, 29);
             button7.TabIndex = 12;
@@ -229,7 +230,7 @@ namespace yapaySinir
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(503, 370);
+            ClientSize = new System.Drawing.Size(503, 364);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
